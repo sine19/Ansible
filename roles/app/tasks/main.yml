@@ -1,0 +1,7 @@
+- name: Install apache2
+  apt: name=apache2 update_cache=yes state=latest
+
+- name: Start apache2 server
+  systemd:
+    state: started
+    name: apache2

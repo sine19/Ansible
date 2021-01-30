@@ -1,0 +1,7 @@
+- name: Install app
+  host: all
+  remote_user: ubuntu
+  become: yes
+
+  roles:
+  - php-app
